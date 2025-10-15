@@ -28,7 +28,7 @@ app.add_middleware(
 # TODO: Replace "your-gcp-project-id" with your actual Google Cloud project ID.
 try:
     vertexai.init(project="gdgsummit2025", location="us-central1")
-    chat_model = GenerativeModel("gemini-1.5-pro-001")
+    chat_model = GenerativeModel("gemini-2.0-flash-001")
     chat = chat_model.start_chat()
     print("✅ Vertex AI and Gemini model initialized successfully.")
 except Exception as e:
